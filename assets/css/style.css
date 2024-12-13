@@ -1,0 +1,515 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+:root {
+    --Primary: #C1DEE8;
+    --Secondary: #FBD9B9;
+    --Typography: #000000;
+    --ButtonBg: #1F1F1F;
+    --NavBg: #FAFAFA;
+    --white: #FEFEFF;
+    --gray: #ebe7e7;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url("../webfonts/Poppins-Regular.ttf");
+}
+
+/* NavBar Styling Start */
+
+header .main-nav {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: Poppins;
+}
+
+header .main-nav img {
+    margin-right: 8px;
+}
+
+header .logo-content span {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Poppins;
+}
+
+header .signinBtn {
+    width: 120px;
+    font-size: 16px;
+    padding: 8px 10px;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--ButtonBg);
+    border: 1px solid var(--Typography);
+}
+
+header .signinBtn:hover {
+    color: var(--Typography);
+    background-color: transparent;
+}
+
+/* NavBar Styling End */
+
+/* Hero Section Styling Start */
+
+.hero_section {
+    padding: 30px 15px;
+}
+
+.hero_section p {
+    width: 527px;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 30px;
+    font-family: Poppins;
+}
+
+.hosting-sec p {
+    margin: 0px;
+    font-size: 22px;
+    width: 100% !important;
+    text-align: justify !important;
+}
+
+.hero_section h1 {
+    font-size: 50px;
+    text-align: left;
+    font-weight: 600;
+    line-height: 67px;
+    font-family: Poppins;
+}
+
+.hero_section .trial-btn a {
+    font-size: 17px;
+    padding: 10px 20px;
+    color: var(--white);
+    font-family: Poppins;
+    background-color: var(--ButtonBg);
+    border: 1px solid var(--Typography);
+}
+
+.hero_section .trial-btn a:hover {
+    color: var(--Typography);
+    background-color: transparent;
+}
+
+.hero_section .hero_img img {
+    object-fit: contain;
+    animation: moveUp 3s ease-in-out infinite alternate;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Hero Section Styling End */
+
+/* Three Steps Styling Start */
+
+.steps-container {
+    padding: 50px 68px;
+}
+
+.our-features {
+    padding: 50px 50px !important;
+}
+
+.steps-container .title-para {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Poppins;
+}
+
+.steps-container .title-heading {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    text-align: center;
+    font-family: Poppins;
+}
+
+.steps-container .unberline {
+    background: rgb(193, 222, 232);
+    background: linear-gradient(90deg, rgba(193, 222, 232, 1) 30%, rgba(251, 217, 185, 1) 100%);
+}
+
+.steps-container .box-icon img {
+    width: 65px;
+}
+
+.steps-container .steps-box .step-card {
+    padding: 30px 20px;
+    border-radius: 12px;
+    border: 2px solid var(--Typography);
+}
+
+.steps-container .steps-box .step-card:hover {
+    color: var(--white);
+    background-color: var(--Typography);
+}
+
+.steps-container .steps-box .step-card:hover .box-icon img {
+    background-color: var(--white);
+}
+
+.steps-container .steps-box .box-content h2 {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 33px;
+    margin-bottom: 15px;
+    font-family: Poppins;
+}
+
+.steps-container .steps-box .box-icon h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 3px;
+    font-family: Poppins;
+}
+
+.steps-container .steps-box .box-content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: justify;
+    font-family: Poppins;
+}
+
+/* Three Steps Styling End */
+
+/* Email Section Start */
+
+.email-search {
+    margin: 30px auto;
+    padding: 10px 15px;
+}
+
+.email-search .emil-title {
+    width: 450px;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Poppins;
+}
+
+.email-search .searchBar {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Poppins;
+    border: 2px solid var(--Typography);
+}
+
+.email-search .searchBar .inputDiv {
+    width: 430px;
+}
+
+.email-search .searchBar input {
+    width: 70%;
+    padding: 12px;
+    background-color: transparent;
+}
+
+.email-search .searchBar button {
+    width: 30%;
+    padding: 12px 15px;
+    color: var(--white);
+    background-color: var(--ButtonBg);
+}
+
+/* Email Section End */
+
+footer {
+    padding: 10px 15px;
+}
+
+footer .footer-para {
+    font-size: 17px;
+    line-height: 26px;
+    font-family: Poppins;
+}
+
+footer .logo-content span {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 6px;
+    font-family: Poppins;
+}
+
+footer .links h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: Poppins;
+}
+
+footer ul li a {
+    font-size: 17px;
+    line-height: 26px;
+    font-family: Poppins;
+}
+
+footer .copy-right span {
+    font-size: 16px;
+    font-family: Poppins;
+}
+
+footer .copy-right a {
+    font-size: 26px;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+    header {
+        padding: 0px 10px;
+    }
+
+    header .main-nav {
+        padding: 15px 5px;
+        font-size: 18px;
+        font-weight: 300;
+        font-family: Poppins;
+    }
+
+    header .main-nav img {
+        margin-right: 5px;
+    }
+
+    .hero_section {
+        padding: 0px 15px;
+    }
+
+    .hero_section h1 {
+        width: 400px;
+        font-size: 31px;
+        text-align: left;
+        font-weight: 600;
+        line-height: 45px;
+        font-family: Poppins;
+    }
+
+    .hosting-sec h1 {
+        width: 100%;
+        font-size: 29px;
+    }
+
+    .email-search .searchBar button {
+        width: 40%;
+        font-size: 13px;
+        padding: 16px 6px;
+    }
+
+    .hero_section p {
+        width: 320px;
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 18px;
+        text-align: justify;
+    }
+
+    .steps-container {
+        padding: 70px 30px;
+    }
+
+    .steps-container .steps-box .step-card {
+        padding: 20px 10px;
+        border-radius: 10px;
+    }
+
+    .steps-container .box-icon img {
+        width: 60px;
+    }
+
+    .steps-container .steps-box .box-icon h2 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .our-features {
+        padding: 50px 15px !important;
+    }
+
+    .steps-container .title-heading {
+        font-size: 40px;
+    }
+
+    .steps-container .steps-box .box-content h2 {
+        font-size: 19px;
+    }
+
+    .steps-container .steps-box .box-content p {
+        font-size: 15px;
+    }
+
+    .email-search .emil-title {
+        font-size: 28px;
+        font-weight: bold;
+        font-family: Poppins;
+    }
+
+    .email-search .searchBar .inputDiv {
+        width: 250px;
+    }
+
+    .email-search .searchBar {
+        padding: 4px 5px;
+    }
+
+    .email-search {
+        margin: 20px auto;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+
+    header {
+        padding: 0px 10px;
+    }
+
+    .hero_section {
+        padding: 15px;
+        border-radius: 0px;
+    }
+
+    .hero_section h1 {
+        width: 100%;
+        margin: 0px auto;
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 40px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .hero_section p {
+        width: 100%;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .hero_section .trial-btn a {
+        font-size: 14px;
+        padding: 12px 20px;
+        color: var(--white);
+        font-family: Poppins;
+        background-color: var(--ButtonBg);
+        border: 1px solid var(--Typography);
+    }
+
+    .our-features {
+        padding: 20px 15px !important;
+    }
+
+    .our-features .steps-box .box-content h2 {
+        font-size: 23px;
+        text-align: left !important;
+    }
+
+    .steps-container .steps-box .box-icon h2 {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .steps-container {
+        padding: 45px 15px;
+    }
+
+    .steps-container .steps-box .box-content h2 {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 22px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .steps-container .steps-box .box-content p {
+        text-align: center;
+    }
+
+    .steps-container .steps-box .box-content p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .steps-container {
+        padding: 60px 30px;
+    }
+
+    .steps-container .title-heading {
+        margin: 0px;
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .email-search {
+        margin: 0px auto !important;
+    }
+
+    .email-search .searchBar .inputDiv {
+        width: 100% !important;
+    }
+
+    .email-search .searchBar {
+        width: 100%;
+        padding: 4px 5px !important;
+    }
+
+    .email-search .emil-title {
+        font-weight: 600;
+        line-height: 32px;
+        text-align: center;
+        font-size: 24px !important;
+    }
+
+    footer {
+        margin: 30px auto;
+    }
+
+    footer .links h2 {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .email-search {
+        margin: 20px auto;
+    }
+
+    .email-search .searchBar button {
+        width: 37%;
+        font-size: 14px;
+        padding: 5px 0px;
+    }
+
+    footer .footer-para {
+        font-size: 17px;
+        text-align: justify;
+    }
+}

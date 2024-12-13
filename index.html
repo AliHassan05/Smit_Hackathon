@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+</head>
+
+<body>
+
+    <!-- NavBar Start -->
+    <header>
+        <div class="container mx-auto flex items-center px-10 py-3 main-nav">
+            <!-- Logo -->
+            <a class="flex-shrink-0 flex items-center logo-content">
+                <img src="assets/images/Logo.png" class="web_logo" alt="Logo">
+                <span>Host Ease</span>
+            </a>
+            <!-- Hamburger Menu (For mobile and tablet screens) -->
+            <button class="block lg:hidden ml-auto focus:outline-none" onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+            <!-- Navbar Links for Desktop -->
+            <nav class="hidden lg:flex flex-1 justify-center items-center space-x-16">
+                <a href="" class="">About</a>
+                <a href="" class="">Services</a>
+                <a href="" class="">Pricing</a>
+                <a href="" class="">Blog</a>
+            </nav>
+            <!-- Buttons (Only visible on desktop) -->
+            <div class="hidden lg:flex space-x-3 items-center ml-auto">
+                <a href="#" class="py-1 px-3 signinBtn">Sign in</a>
+            </div>
+        </div>
+        <!-- Dropdown Menu for Mobile/Tablet -->
+        <div id="dropdownMenu"
+            class="max-h-0 rounded overflow-hidden lg:hidden flex flex-col bg-gray-200 my-1 px-4 space-y-2 transition-all duration-700 ease-in-out">
+            <a href="#" class="py-1 text-center">About</a>
+            <a href="#" class="py-1 text-center">Services</a>
+            <a href="#" class="py-1 text-center">Pricing</a>
+            <a href="#" class="py-1 text-center">Blog</a>
+            <div class="flex flex-nowrap justify-center items-baseline py-2 gap-5">
+                <a href="#" class="py-1 px-3 signinBtn">Sign in</a>
+            </div>
+        </div>
+    </header>
+    <!-- NavBar End -->
+
+    <!-- Hero Section Start -->
+    <section>
+        <div class="container hero_section mx-auto flex md:flex-row flex-col items-center">
+            <div
+                class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left my-10 items-center text-center">
+                <h1 class="mb-4">Streamlining your journey to digital dominance.</h1>
+                <p class="mb-8">Streamlining your journey to digital dominance. Effortless hosting solutions for a
+                    seamless online presence.</p>
+                <div class="flex items-center justify-center trial-btn w-100">
+                    <a href="#">Start a 10-Day Free Trial</a>
+                </div>
+            </div>
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 hero_img">
+                <img class="object-cover object-center" alt="Hero_Image" src="assets/images/heroBanner.png">
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Three Steps Start -->
+    <section class="steps-container">
+        <div class="container mx-auto">
+            <div
+                class="steps-box flex lg:flex-nowrap md:flex-nowrap flex-wrap justify-center sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6 gap-6">
+                <div class="md:w-1/3 flex flex-col text-left items-left step-card">
+                    <div class="box-icon inline-flex space-x-4 items-center rounded-full mb-3 flex-shrink-0">
+                        <img src="assets/images/Integration.png" class="object-cover object-center"
+                            alt="Questions-Logo">
+                        <h2>Seamless Integration</h2>
+                    </div>
+                    <div class="flex-grow box-content">
+                        <p>
+                            HostEase offers seamless integration of hosting and domain management services, providing
+                            users
+                            with a unified platform to effortlessly manage their online presence.
+                        </p>
+                    </div>
+                </div>
+                <div class="md:w-1/3 flex flex-col text-left items-left step-card">
+                    <div class="box-icon inline-flex space-x-4 items-center rounded-full mb-3 flex-shrink-0">
+                        <img src="assets/images/Innovation.png" class="object-cover object-center" alt="Questions-Logo">
+                        <h2>Innovation in Simplicity</h2>
+                    </div>
+                    <div class="flex-grow box-content">
+                        <p>
+                            We pride ourselves on innovative solutions that prioritize simplicity without compromising
+                            on
+                            performance or security, making it ideal choice for both beginners and experienced users
+                            alike.
+                        </p>
+                    </div>
+                </div>
+                <div class="md:w-1/3 flex flex-col text-left items-left step-card">
+                    <div class="box-icon inline-flex space-x-4 items-center rounded-full mb-3 flex-shrink-0">
+                        <img src="assets/images/Personalized.png" class="object-cover object-center"
+                            alt="Questions-Logo">
+                        <h2>Personalized Support</h2>
+                    </div>
+                    <div class="flex-grow box-content">
+                        <p>
+                            Our dedicated 24/7 support team goes the extra mile to provide personalized assistance,
+                            ensuring
+                            that every user receives the help they need to succeed online.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Three Steps End -->
+
+    <!-- web hosting section starts -->
+    <section>
+        <div class="container hero_section hosting-sec mx-auto flex md:flex-row flex-col items-center">
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 hero_img">
+                <img class="object-cover object-center" alt="Hero_Image" src="assets/images/webHosting.png">
+            </div>
+            <div
+                class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-0 flex flex-col md:items-start md:text-left my-8 items-center text-center">
+                <h1 class="mb-4">Secure web hosting that
+                    grows with your business</h1>
+                <p class="mb-8">Our secure web hosting services are designed to evolve seamlessly alongside your
+                    business. With robust security measures in place, including SSL encryption and regular backups, your
+                    data stays protected at all times.Trust HostEase to safeguard
+                    your online presence while supporting your business's growth trajectory.</p>
+            </div>
+        </div>
+    </section>
+    <!-- web hosting section End -->
+
+    <!-- Three Steps Start -->
+    <section class="steps-container our-features">
+        <div class="container mx-auto">
+            <div class="text-center mb-4 md:mb-8 lg:mb-8">
+                <h1 class="title-heading">Our Features</h1>
+            </div>
+            <div class="steps-box grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-4 flex flex-col text-left items-left step-card">
+                    <div class="box-icon inline-flex items-center justify-start rounded-full mb-5 flex-shrink-0">
+                        <img src="assets/images/1.png" class="object-cover object-center" alt="Questions-Logo">
+                    </div>
+                    <div class="flex-grow box-content">
+                        <h2>Easy Site Builder</h2>
+                        <p>
+                            Build your website with ease using our intuitive drag-and-drop site builder, no coding
+                            required. Create stunning, professional-looking websites in minutes.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-4 flex flex-col text-left items-left step-card">
+                    <div class="box-icon inline-flex items-center justify-start rounded-full mb-5 flex-shrink-0">
+                        <img src="assets/images/2.png" class="object-cover object-center" alt="Quote-Logo">
+                    </div>
+                    <div class="flex-grow box-content">
+                        <h2>Domain Registration</h2>
+                        <p>
+                            Secure your online identity with ease by registering your domain name through us. Choose
+                            from a wide range of domain extensions and manage your domain effortlessly.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-4 flex flex-col text-left items-left step-card">
+                    <div class="box-icon inline-flex items-center justify-start rounded-full mb-5 flex-shrink-0">
+                        <img src="assets/images/3.png" class="object-cover object-center" alt="Registered-Logo">
+                    </div>
+                    <div class="flex-grow box-content">
+                        <h2>Reliable Hosting</h2>
+                        <p>
+                            Experience top-notch performance and reliability with our hosting solutions. Benefit from
+                            high uptime, fast loading speeds, and robust security measures.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-4 flex flex-col text-left items-left step-card">
+                    <div class="box-icon inline-flex items-center justify-start rounded-full mb-5 flex-shrink-0">
+                        <img src="assets/images/4.png" class="object-cover object-center" alt="Registered-Logo">
+                    </div>
+                    <div class="flex-grow box-content">
+                        <h2>24/7 Customer Support</h2>
+                        <p>
+                            Get peace of mind with our round-the-clock customer support. Our team of experts is
+                            available 24/7 to assist you with any questions or issues you may encounter.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-4 flex flex-col text-left items-left step-card">
+                    <div class="box-icon inline-flex items-center justify-start rounded-full mb-5 flex-shrink-0">
+                        <img src="assets/images/5.png" class="object-cover object-center" alt="Registered-Logo">
+                    </div>
+                    <div class="flex-grow box-content">
+                        <h2>One-Click Installs</h2>
+                        <p>
+                            Install popular web applications like WordPress, etc with just one click. One-click install
+                            feature simplifies the process of setting up your website, saving you time and effort.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-4 flex flex-col text-left items-left step-card">
+                    <div class="box-icon inline-flex items-center justify-start rounded-full mb-5 flex-shrink-0">
+                        <img src="assets/images/6.png" class="object-cover object-center" alt="Registered-Logo">
+                    </div>
+                    <div class="flex-grow box-content">
+                        <h2>Scalable Hosting Plans</h2>
+                        <p>
+                            Scale your hosting resources effortlessly as your website grows. With our plans, you can
+                            easily upgrade your resources based on your performance needs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Three Steps End -->
+
+    <!-- Email Section Start -->
+    <section class="container mx-auto email-search">
+        <div class="flex items-center flex-wrap justify-between gap-4">
+            <!-- Heading Section -->
+            <h1 class="emil-title">
+                Sign up for the best web hosting service today!
+            </h1>
+            <!-- Input Section -->
+            <div class="flex items-center justify-center searchBar w-100">
+                <div class="flex overflow-hidden inputDiv">
+                    <input type="email" placeholder="Enter your email"
+                        class="text-gray-700 placeholder-gray-400 focus:outline-none" />
+                    <button>Get a Quote</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Email Section End -->
+
+    <!-- Footer Start -->
+    <footer class="container mx-auto">
+        <div class="flex flex-wrap md:flex-nowrap md:space-x-10 md:justify-between lg:justify-between items-center">
+            <!-- Left Section -->
+            <div class="flex flex-col items-start">
+                <div class="flex items-center space-x-2 mb-3">
+                    <a class="flex-shrink-0 flex items-center logo-content">
+                        <img src="assets/images/Logo.png" class="web_logo" alt="Logo">
+                        <span>Host Ease</span>
+                    </a>
+                </div>
+                <p class="text-sm max-w-full max-w-lg max-w-md footer-para">
+                    Our vision is to empower individuals and businesses to thrive online by providing effortless hosting
+                    solutions. We aim to streamline the journey to digital success, making it accessible to all.
+                </p>
+            </div>
+            <!-- Right Section -->
+            <div class="flex lg:space-x-16 md:space-x-16 space-x-16 links">
+                <!-- Quick Menu -->
+                <div>
+                    <h2>Quick Menu</h2>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-gray-600">Blog</a></li>
+                        <li><a href="#" class="hover:text-gray-600">About</a></li>
+                        <li><a href="#" class="hover:text-gray-600">Pricing</a></li>
+                        <li><a href="#" class="hover:text-gray-600">Services</a></li>
+                    </ul>
+                </div>
+                <!-- Resources -->
+                <div>
+                    <h2>Resources</h2>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-gray-600">Jobs</a></li>
+                        <li><a href="#" class="hover:text-gray-600">Forums</a></li>
+                        <li><a href="#" class="hover:text-gray-600">Newsletter</a></li>
+                        <li><a href="#" class="hover:text-gray-600">Community</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Social Media -->
+        <div class="flex items-center justify-between py-4 sm:flex-row flex-col copy-right">
+            <span class="text-sm sm:mb-0 mb-4">© 2024 Host Ease All Rights Reserved</span>
+            <div class="flex space-x-4">
+                <a href="#" class="transition">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="transition">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="transition">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- NavBar Dropdown Menu Js Start -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('dropdownMenu');
+
+            if (menu.classList.contains('max-h-0')) {
+                menu.classList.remove('max-h-0');
+                menu.classList.add('max-h-screen');  // Expand the menu
+            } else {
+                menu.classList.add('max-h-0');
+                menu.classList.remove('max-h-screen');  // Collapse the menu
+            }
+        }
+    </script>
+    <!-- NavBar Dropdown Menu Js End -->
+</body>
+
+</html>
